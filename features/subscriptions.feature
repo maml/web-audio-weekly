@@ -9,3 +9,11 @@ Feature: Subscribe
 		And I fill in "subscription_email_confirmation" with "mloseke@gmail.com"
 		When I press "Subscribe"
 		Then I should see "Thanks for signing up!"
+
+  Scenario: Failure - email confirmation does not match email
+	  Given I am on the landing page
+		And I fill in "subscription_email" with "mloseke@gmail.com"
+		And I fill in "subscription_email_confirmation" with "ke@gmail.com"
+		When I press "Subscribe"
+		Then I should see "Email doesn't match confirmation"
+
