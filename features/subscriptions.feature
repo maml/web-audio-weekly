@@ -8,4 +8,4 @@ Feature: Subscribe
 		And I fill in "subscription_email" with "mloseke@gmail.com"
 		And I fill in "subscription_email_confirmation" with "mloseke@gmail.com"
 		When I press "Subscribe"
-		Then the page should have the notice message "Thanks for signing up!"
+		Then I should see "Thanks for signing up!"
