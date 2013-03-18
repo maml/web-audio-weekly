@@ -11,5 +11,5 @@ When(/^I press "(.*?)"$/) do |arg1|
 end
 
 Then(/^the page should have the notice message "(.*?)"$/) do |arg1|
-	page.has_content?(arg1)
+	assert page.has_content?(arg1)
 end
