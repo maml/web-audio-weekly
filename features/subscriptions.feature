@@ -3,7 +3,7 @@ Feature: Subscribe
 	A visitor
 	Should be able to enter their email address
 
-	Scenario: Enters their email address
+	Scenario: Success 
 		Given I am on the landing page
 		And I fill in "subscription_email" with "ml@gmail.com"
 		And I fill in "subscription_email_confirmation" with "ml@gmail.com"
